@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Farmacia XPTO</title>
+
+    <link href="vendor/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/signin.css" rel="stylesheet">
+    
+    <script src="vendor/jquery/jquery-1.11.3.js"></script>
+    <script src="vendor/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script src="vendor/angular-1.5.5/angular.min.js"></script>
+    <script src="vendor/angular-1.5.5/i18n/angular-locale_pt-br.js"></script>
+    <script src="vendor/angular-ui-router.js"></script>
+    <script src="vendor/ng-table.js"></script>
+    <script src="vendor/ng-table.css"></script>
+    
+    <script src="app/rotas/rotas.js"></script>
+    <script src="app/pages/mainController.js"></script>
+    <script src="app/pages/modelo.js"></script>
+
+  </head>
+  <body ng-controller="MainController">
+  	
+    <div class="container">
+    
+    <div ng-if="isAutenticado" ng-include="'app/pages/menuTop.html'"></div>
+
+    <div ui-view></div>
+
+    </div> <!-- /container -->
+
+  </body>
+</html>

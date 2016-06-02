@@ -1,0 +1,111 @@
+     <h1>Exemplos!</h1>
+
+	<div class="dropdown">
+		<button class="btn btn-default dropdown-toggle" type="button"
+			id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+			aria-expanded="true">
+			Dropdown <span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+			<li><a href="#">Action</a></li>
+			<li><a href="#">Another action</a></li>
+			<li><a href="#">Something else here</a></li>
+			<li role="separator" class="divider"></li>
+			<li><a href="#">Separated link</a></li>
+		</ul>
+	</div>
+	<br/>
+	<div class="btn-group" role="group" aria-label="...">
+		<button type="button" class="btn btn-default">Left</button>
+		<button type="button" class="btn btn-default">Middle</button>
+		<button type="button" class="btn btn-default">Right</button>
+	</div>
+	<br/>
+	<!-- Single button -->
+	<div class="btn-group">
+		<button type="button" class="btn btn-default">Default</button>
+		<button type="button" class="btn btn-primary">Primary</button>
+		<button type="button" class="btn btn-success">Success</button>
+		<button type="button" class="btn btn-info">Info</button>
+		<button type="button" class="btn btn-warning">Warning</button>
+		<button type="button" class="btn btn-danger">Danger</button>
+		<button type="button" class="btn btn-link">Link</button>
+		
+		<button type="button" class="btn btn-default dropdown-toggle"
+			data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Action <span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+			<li><a href="#">Action</a></li>
+			<li><a href="#">Another action</a></li>
+			<li><a href="#">Something else here</a></li>
+			<li role="separator" class="divider"></li>
+			<li><a href="#">Separated link</a></li>
+		</ul>
+	</div>
+	<br/><br/>
+
+	<div class="alert alert-warning alert-dismissible fade in" role="alert">
+		<button type="button" class="close" data-dismiss="alert" arial-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+		Alerta de Perigo com x para ser fechado!!!
+	</div>
+
+	<div class="alert alert-success">
+		<strong>Success!</strong> Indicates a successful or positive action.
+	</div>
+
+	<div class="alert alert-info">
+		<strong>Info!</strong> Indicates a neutral informative change or action.
+	</div>
+
+	<div class="alert alert-warning">
+		<strong>Warning!</strong> Indicates a warning that might need attention.
+	</div>
+
+	<div class="alert alert-danger">
+		<strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+	</div>
+	<br/>
+	
+	<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Firstname</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Anna</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <br/>
+  	<button class="btn btn-mini btn-primary" >Novo</button>
+  	<br/>
+  	<br/>
+  	<div>
+  	<label class="col-sm-2">Nome: </label>
+  	<div>
+  	<input class="col-sm-8" type="text" />
+  	</div>
+  	</div>
+  	<br/>
+	<div>
+	<ul ng-controller="TaskController as taskCtrl">
+		<li ng-repeat="task in taskCtrl.tasks">{{task}}</li>
+	</ul>
+	</div>
+	
+	<input type="text" ng-model="nome">{{nome}}

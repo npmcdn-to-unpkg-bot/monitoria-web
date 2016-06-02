@@ -1,0 +1,38 @@
+<div ng-init="montaDisciplinas()">
+	<table class="table table-bordered">
+    	<thead>
+      		<tr>
+        		<th>Disciplina</th>
+        		<th>Alunos</th>
+        		<th>Notas</th>
+        		<th>Escolhido?</th>
+      		</tr>
+    	</thead>
+    	<tbody>
+      		<tr ng-repeat="disciplina in disciplinasLista">
+        		<td>{{disciplina.nome}}</td>
+        		<td>
+        			<table>
+        				<tr ng-repeat="aluno in disciplina.alunos">
+        					<td>{{aluno.nome}}</td>
+        				</tr>
+        			</table>
+        		</td>
+        		<td>
+        			<table>
+        				<tr ng-repeat="aluno in disciplina.alunos">
+        					<td>{{aluno.nota}}</td>
+        				</tr>
+        			</table>
+        		</td>
+        		<td>
+        			<table>
+        				<tr ng-repeat="aprovado in disciplina.alunos">
+        					
+        				</tr>
+        			</table>
+        		</td>
+      		</tr>
+    	</tbody>
+  </table>
+</div>
